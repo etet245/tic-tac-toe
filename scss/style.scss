@@ -1,0 +1,59 @@
+%noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #444;
+  color: #fff;
+  overflow: hidden;
+  @extend %noselect;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+  .game-area {
+    width: 304px;
+    height: 304px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: default;
+    
+    .message {
+      width: 100%;
+      font-size: 150%;
+      text-align: center;
+      
+      .choice {
+        font-size: 200%;
+        color: #aaa;
+        
+        &:hover, &:active {
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+    
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 500%;
+      @extend .container;
+    }
+  }
+}

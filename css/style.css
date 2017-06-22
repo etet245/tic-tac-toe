@@ -1,0 +1,58 @@
+body {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome and Opera */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #444;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container, .container .game-area .cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .game-area, .container .game-area .cell .game-area {
+  width: 304px;
+  height: 304px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: default;
+}
+.container .game-area .message {
+  width: 100%;
+  font-size: 150%;
+  text-align: center;
+}
+.container .game-area .message .choice {
+  font-size: 200%;
+  color: #aaa;
+}
+.container .game-area .message .choice:hover, .container .game-area .message .choice:active {
+  color: #fff;
+  cursor: pointer;
+}
+.container .game-area .cell {
+  width: 100px;
+  height: 100px;
+  font-size: 500%;
+}
