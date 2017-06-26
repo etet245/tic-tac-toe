@@ -8,4 +8,4 @@ One false move, and Oh no!
 
 You've just lost at Tic Tac Toe.
 
-[![The impossible game](you-lose.png)](https://etet245.github.io/tic-tac-toe)
+[![The impossible game](Optimized-you-lose.png)](https://etet245.github.io/tic-tac-toe)
